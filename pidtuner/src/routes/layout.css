@@ -1,0 +1,151 @@
+@import 'tailwindcss';
+
+:root {
+    --main: 50, 50, 50;
+    --sec: 200, 200, 200;
+    --shadow: 133, 120, 255;
+}
+
+@font-face {
+    font-family: "Pro Font Windows";
+    src: url(../assets/fonts/ProFontWindows.ttf);
+}
+
+@theme {
+    --font-main: "Pro Font Windows", sans-serif;
+    --color-bg: rgb(21, 24, 48);
+    --color-main: rgb(92, 102, 180);
+}
+
+body {
+    background-color: rgb(21, 24, 48);
+}
+
+.link {
+    background-size: 100vw;
+    background-image: linear-gradient(45deg, rgb(133, 120, 255) 10%, rgb(115, 3, 192), rgb(236, 56, 188), rgb(255, 222, 246), rgb(133, 120, 255) 90%);
+    animation: titleRGB 7s infinite linear;
+}
+
+.title {
+    background-size: 100vw;
+    background-image: linear-gradient(45deg, rgb(133, 120, 255) 10%, rgb(115, 3, 192), rgb(236, 56, 188), rgb(255, 222, 246), rgb(133, 120, 255) 90%);
+    animation: titleRGB 7s infinite linear;
+}
+
+.glowWrapper {
+    text-shadow: 0 0 25px rgba(133, 120, 255, 0.5);
+    transform: translateX(-50%);
+    animation: shadowChange 7s infinite linear;
+}
+
+.header {
+    clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+    background-color: rgba(30, 33, 58, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.headerbg {
+    background-size: 100vw;
+    clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+    background-image: linear-gradient(45deg, rgb(133, 120, 255) 10%, rgb(115, 3, 192), rgb(236, 56, 188), rgb(255, 222, 246), rgb(133, 120, 255) 90%);
+    animation: titleRGB 7s infinite linear;
+    opacity: 1;
+    z-index: -1;
+}
+
+.headertext {
+    animation: shadowChangeSmall 7s infinite linear;
+    text-shadow: 0 0 5px rgba(133, 120, 255, 1);
+}
+
+
+.techniqueButton:hover {
+    background-size: 100vw;
+    background-image: linear-gradient(45deg, rgb(133, 120, 255) 10%, rgb(115, 3, 192), rgb(236, 56, 188), rgb(255, 222, 246), rgb(133, 120, 255) 90%);
+    animation: titleRGB 7s infinite linear;
+}
+
+.watermark {
+    transition: all 0.4s cubic-bezier(.17, .67, .48, 1.24);
+}
+
+.watermark:hover {
+    font-size: 22px;
+}
+
+.watermark:active {
+    font-size: 21px;
+}
+
+.guessInput {
+    background-size: 100vw;
+    background-image: linear-gradient(45deg, rgb(133, 120, 255) 10%, rgb(115, 3, 192), rgb(236, 56, 188), rgb(255, 222, 246), rgb(133, 120, 255) 90%);
+    animation: titleRGB 7s infinite linear;
+}
+
+@keyframes titleRGB {
+    from {
+        background-position-x: 0vw;
+    }
+
+
+    99.99% {
+        background-position-x: 100vw;
+    }
+
+    100% {
+        background-position-x: 0vw;
+
+    }
+}
+
+@keyframes shadowChange {
+    10% {
+        text-shadow: 0 0 33px rgba(133, 120, 255, 0.7);
+    }
+
+    30% {
+        text-shadow: 0 0 25px rgba(115, 3, 192, 1);
+    }
+
+    50% {
+        text-shadow: 0 0 25px rgba(236, 56, 188, 0.9);
+
+    }
+
+    70% {
+        text-shadow: 0 0 50px rgba(255, 158, 229, 0.5);
+
+    }
+
+    90% {
+        text-shadow: 0 0 33px rgba(133, 120, 255, 0.7);
+
+    }
+}
+
+@keyframes shadowChangeSmall {
+    10% {
+        text-shadow: 0 0 5px rgba(133, 120, 255, 0.7);
+    }
+
+    30% {
+        text-shadow: 0 0 5px rgba(115, 3, 192, 1);
+    }
+
+    50% {
+        text-shadow: 0 0 5px rgba(236, 56, 188, 0.9);
+
+    }
+
+    70% {
+        text-shadow: 0 0 5px rgba(255, 158, 229, 0.5);
+
+    }
+
+    90% {
+        text-shadow: 0 0 5px rgba(133, 120, 255, 0.7);
+
+    }
+}
