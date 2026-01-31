@@ -39,6 +39,7 @@ function startTechnique() {
         kDMath = [kD];
         kPMath = [guess];
         delta = kPMath[0];
+        flavor = 'Start with finding a rough estimate for kP. As long as it is high enough that it will slow down fast without oscillating will be enough for our purposes.';
     }
     if(technique === 'Oscillations') {
         action = 'oscillate above a set amount of times';
