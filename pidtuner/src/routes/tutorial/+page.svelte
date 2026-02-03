@@ -2,16 +2,18 @@
 	import Header from '$lib/Header.svelte';
 </script>
 
-<div
-	class="title my-2 scale-y-105 justify-self-center bg-clip-text px-2 font-main text-8xl font-bold text-transparent"
->
-	PID Tuner
-</div>
-<div
-	class="glowWrapper absolute top-0 left-1/2 my-2 scale-y-105 px-2 font-main text-8xl font-bold text-transparent"
->
-	PID Tuner
-</div>
+<a href="/" class="relative flex justify-center">
+	<div
+		class="title my-2 scale-y-105 justify-self-center bg-clip-text px-2 font-main text-8xl font-bold text-transparent"
+	>
+		PID Tuner
+	</div>
+	<div
+		class="glowWrapper absolute top-0 left-1/2 my-2 scale-y-105 px-2 font-main text-8xl font-bold text-transparent"
+	>
+		PID Tuner
+	</div>
+</a>
 <Header text="Brief" />
 <h1 class="text-md my-2 font-main text-white">
 	PID Tuner finds optimal PID values using Yes/No questions to help new comers tune their PID

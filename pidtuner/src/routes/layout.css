@@ -60,7 +60,8 @@ body {
 }
 
 
-.techniqueButton:hover {
+.techniqueButton:hover,
+.doneButton {
     background-size: 100vw;
     background-image: linear-gradient(45deg, rgb(133, 120, 255) 10%, rgb(115, 3, 192), rgb(236, 56, 188), rgb(255, 222, 246), rgb(133, 120, 255) 90%);
     animation: titleRGB 7s infinite linear;

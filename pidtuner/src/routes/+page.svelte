@@ -284,17 +284,18 @@
 	}
 </script>
 
-<div
-	class="title my-2 scale-y-105 justify-self-center bg-clip-text px-2 font-main text-8xl font-bold text-transparent"
->
-	PID Tuner
-</div>
-<div
-	class="glowWrapper absolute top-0 left-1/2 my-2 scale-y-105 px-2 font-main text-8xl font-bold text-transparent"
->
-	PID Tuner
-</div>
-
+<a href="/" class="relative flex justify-center">
+	<div
+		class="title my-2 scale-y-105 justify-self-center bg-clip-text px-2 font-main text-8xl font-bold text-transparent"
+	>
+		PID Tuner
+	</div>
+	<div
+		class="glowWrapper absolute top-0 left-1/2 my-2 scale-y-105 px-2 font-main text-8xl font-bold text-transparent"
+	>
+		PID Tuner
+	</div>
+</a>
 <Header text="Welcome!" />
 
 <h1 class="text-md my-2 font-main text-white">
@@ -497,17 +498,17 @@
 			</button>
 
 			<button
-				onclick={() => Done()}
-				class="ease-cubic-bezier(.17,.67,.48,1.14) techniqueButton my-2 w-[10%] bg-main text-center font-main text-xl text-white duration-200 hover:border-b-4 hover:text-2xl active:translate-y-0.5 active:border-b-0"
-			>
-				{lastButton}
-			</button>
-
-			<button
 				onclick={() => startUpdate()}
 				class="ease-cubic-bezier(.17,.67,.48,1.14) techniqueButton my-2 w-[10%] bg-main text-center font-main text-xl text-white duration-200 hover:border-b-4 hover:text-2xl active:translate-y-0.5 active:border-b-0"
 			>
 				Update
+			</button>
+
+			<button
+				onclick={() => Done()}
+				class="ease-cubic-bezier(.17,.67,.48,1.14) doneButton techniqueButton my-2 w-[10%] text-center font-main text-xl text-white duration-200 hover:border-b-4 hover:text-2xl active:translate-y-0.5 active:border-b-0"
+			>
+				{lastButton}
 			</button>
 		</h1>
 
