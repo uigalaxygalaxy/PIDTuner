@@ -632,11 +632,20 @@
 		{/if}
 	</div>
 {/if}
-<footer class="flex justify-center">
+<footer class="flex flex-col justify-center">
 	<a
 		href="https://uigalaxy.net"
 		class=" link watermark bg-clip-text text-center font-main text-xl text-transparent underline"
 	>
 		uigalaxy.net 2026 | 45434X Paradox
 	</a>
+
+	<h1 class=" link links bg-clip-text text-center font-main text-lg text-transparent">
+		check out my other projects <br />
+		<span class="underline transition-all duration-300 hover:text-white"
+			><a href="https://vex-nb-generator.vercel.app/" target="_blank" rel="noopener noreferrer"
+				>Vex Notebook Helper</a
+			></span
+		>
+	</h1>
 </footer>
